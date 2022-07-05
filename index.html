@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color Scheme Generator</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+       
+        <div class="container">
+            <header>
+                <h1>Color Scheme Generator</h1>
+                <h4>By Wilkinho</h4>
+            </header>
+            <div class="selector">
+                
+                <form action="" id="color-form">
+                    <div id="sel-container">
+                        <h6>Select Scheme:</h6>
+                        <select id="style" name="color-style">
+                            <option value="monochrome">Monochrome</option>
+                            <option value="monochrome-dark">Monochrome-Dark</option>
+                            <option value="monochrome-light">Monochrome-Light</option>
+                            <option value="analogic">Analogic</option>
+                            <option value="complement">complement</option>
+                            <option value="analogic-complement">Analogic-Complement</option>
+                            <option value="triad">Triad</option>
+                            <option value="quad">Quad</option>
+                        </select>
+                        <h6>Pick a Color:</h6>
+                        <input type="color" id="base-color" value="red">
+                    </div>
+                    
+                    <button id="getBtn" onclick="btnAction()">Get Scheme!</button>
+                </form>
+                
+            </div>
+            <div class="color-dis-container">
+                <!-- <div class="col-display" id="display-1"></div>
+                <div class="col-display" id="display-2"></div>
+                <div class="col-display" id="display-3"></div>
+                <div class="col-display" id="display-4"></div>
+                <div class="col-display" id="display-5"></div> -->
+
+                <button class="col-display" id="display-1" onclick="copyToClipboard()"></button>
+                <button class="col-display" id="display-2"></button>
+                <button class="col-display" id="display-3"></button>
+                <button class="col-display" id="display-4"></button>
+                <button class="col-display" id="display-5"></button>
+               
+            </div>
+            <div class="color-text-container">
+                <div class="col-text-display" id="text-display-1"></div>
+                <div class="col-text-display" id="text-display-2"></div>
+                <div class="col-text-display" id="text-display-3"></div>
+                <div class="col-text-display" id="text-display-4"></div>
+                <div class="col-text-display" id="text-display-5"></div> 
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
